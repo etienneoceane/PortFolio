@@ -1,0 +1,104 @@
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color:#0a192f !important;
+}
+.navbar a{
+    background-color: none;
+    color: white;
+}
+
+.banner_content {
+color: #f1a6e4;
+}
+
+#cv_container {
+background-color: #0a192f;
+}
+
+img{
+    width: 75%;
+    border-radius: 50%;
+}
+
+h2{
+    color: white;
+    
+    background-color:rgb(158, 50, 91);
+}
+
+.nom {
+    background-color: #0a192f;
+    color:rgb(158, 50, 91);
+    margin-top: 25px;
+}
+
+#titre {
+    color:rgb(158, 50, 91);
+    margin-top: 2%;
+    margin-bottom:0%;
+}
+
+#previous-me{
+    margin-top: 2%;
+    margin-bottom:2%;
+    color:#f1a6e4;
+}
+
+h3{
+    color:rgb(158, 50, 91);
+    margin-top: 35px;
+
+}
+
+h5{
+    color:#f1a6e4;
+    margin-top: 10px;
+}
+
+#encadre{
+    background-color:#0a192f;
+
+}
+
+label{
+    color:#f1a6e4;
+}
+
+.intitule {
+    font-size: 20px;
+    color:rgb(158, 50, 91);
+    font-weight: bold;
+}
+
+.date, .competences{
+    color:rgb(158, 50, 91);
+}
+
+.description{
+    color:#f1a6e4;
+}
+
+.intitule_formation{
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 0%;
+    color:rgb(158, 50, 91);
+}
+
+b{
+    font-size:x-large;
+    text-align:justify;
+    margin-bottom:0;
+    padding-left: 30px;
+}
+
+ul{
+    padding-left: 0%;
+}
+
+#interets {
+    font-size: 20px;
+    color:#f1a6e4;
+}
