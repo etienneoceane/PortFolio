@@ -7,53 +7,92 @@
 			{% block title %}Océane Etienne Développeuse Web
 			{% endblock %}
 		</title>
-		
-		
+
+		<!-- Favicon-->
+		<link
+		rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+		<!-- Font Awesome icons (free version)-->
+		{# <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script> #}
+		<script src="https://kit.fontawesome.com/80e117cae1.js" crossorigin="anonymous"></script>
+		<!-- Google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+
 		{% block stylesheets %}
-		{# CSS #}
+			<!--CSS -->
 			<link href="assets/css/style.css" rel="stylesheet">
-			<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-		{# Bootstrap #}	
+			<!--Bootstrap -->
 			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
 		{% endblock %}
 
+	</head>
+	<body>
+		<!-- Navigation-->
+		<nav class="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
+			<div class="container">
+				<a class="navbar-brand" href="{{'/'}}">Océane ETIENNE</a>
+				<button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					Menu
+					<i class="fas fa-bars"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item mx-0 mx-lg-1">
+							<a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a>
+						</li>
+						<li class="nav-item mx-0 mx-lg-1">
+							<a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{'/curriculum'}}">Curriculum</a>
+						</li>
+						{# <li class="nav-item mx-0 mx-lg-1">
+							<a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a>
+						</li> #}
+					</ul>
+				</div>
+			</div>
+		</nav>
+		{% block header %}
+			{# <header>
+													<div class="container-fluid ">
+														<div class="row">
+															<nav class="navbar navbar-expand-lg">
+																<div class="container-fluid">
+																	<a class="navbar-brand" href="{{'/'}}">Océane Etienne Développeuse Web</a>
+																	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+																		<span class="navbar-toggler-icon"></span>
+																	</button>
+																	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+																		<div class="navbar-nav">
+																			<a class="nav-link" href="#">Réalisations</a>
+																			<a class="nav-link" href="{{'/curriculum'}}">Curriculum </a>
+																			<a class="nav-link" href="#">Me contacter</a>
+																		</div>
+																	</div>
+																</div>
+															</nav>
+														</div>
+													</div>
+												</header> #}
+		{% endblock %}
+
+
+		{% block body %}{% endblock %}
+
 
 		{% block javascripts %}
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 			<script src="https://kit.fontawesome.com/80e117cae1.js" crossorigin="anonymous"></script>
-		{% endblock %}
-	</head>
-	<body>
-		{% block header %}
-			<header>
-				<div class="container-fluid ">
-					<div class="row">
-						<nav class="navbar navbar-expand-lg">
-							<div class="container-fluid">
-								<a class="navbar-brand" href="{{'/'}}">Océane Etienne Développeuse Web</a>
-								<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-									<span class="navbar-toggler-icon"></span>
-								</button>
-								<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-									<div class="navbar-nav">
-										<a class="nav-link" href="#">Réalisations</a>
-										<a class="nav-link" href="{{'/curriculum'}}">Curriculum </a>
-										<a class="nav-link" href="#">Me contacter</a>
-									</div>
-								</div>
-							</div>
-						</nav>
-					</div>
-				</div>
-			</header>
 
+			<!-- Bootstrap core JS-->
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+			<!-- Core theme JS-->
+			<script src="js/scripts.js"></script>
+			<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+			<!-- * *                               SB Forms JS                               * *-->
+			<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+			<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *--><script src="https://cdn.startbootstrap.com/sb-forms-latest.js"> </script>
 		{% endblock %}
-		
-		{% block body %}
-		{% endblock %}
-
 	</body>
 </html>
-
 
